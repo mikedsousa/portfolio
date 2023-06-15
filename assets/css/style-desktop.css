@@ -1,0 +1,59 @@
+h1 a {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.cabecalho, .info, .sobre, .formacao, .contato {
+    padding: 1em 4em;
+}
+
+.descricao {
+    font-size: 1.1em;
+}
+
+.info {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "text text text photo"
+    "text text text photo"; 
+    gap: 2em;
+
+    justify-content: center;
+
+} 
+
+.info__container {
+    grid-area: text;
+    
+}
+
+.info__foto {
+    grid-area: photo;
+}
+
+.info img {
+    width: 218px;
+    height: 218px;
+}
+
+.sobre__descricao {
+    max-width: 768px;
+}
+
+.cabecalho {
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.cabecalho__menu-navegacao {
+    display: flex;
+    gap: 1em;
+}
+
+.cabecalho__menu-email {
+    font-weight: 700;
+}
