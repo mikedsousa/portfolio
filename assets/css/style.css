@@ -274,7 +274,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--offwhite);
+    background: white;
     width: 296px;
     height: 118px;
 }

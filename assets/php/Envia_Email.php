@@ -133,8 +133,8 @@
 	$mail->SMTPAuth = true;
 	$mail->Debugoutput = 'html';
 	$mail->SMTPDebug = 3;
-	$mail->Username = 'eu@gmail.com';
-	$mail->Password = 'minhasenha';
+	$mail->Username = 'mikedesousa92@gmail.com';
+	$mail->Password = '03onefortheroad';
 	if ($ENCRIPTACAO) {
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 	}
@@ -142,7 +142,7 @@
 	$mail->isHTML(true);
 	$mail->Subject = "$Nome_Form enviou um e-mail com o assunto: $Assunto_Form [$Rand_Email]"; // Assunto do E-mail
 
-	$mail->setFrom('EMAIL_REMETENTE@domininio.com', 'NOME_REMETENTE');
+	$mail->setFrom('contato@mikedesousa.site', 'Mike de Sousa');
 	$mail->addReplyTo('EMAIL_REMETENTE@domininio.com', 'NOME_REMETENTE'); // Responder para
 	if ($RECEBER_COPIA) {
 		$mail->addBCC('EMAIL_COPIA@domininio.com'); // Cópia Oculta
