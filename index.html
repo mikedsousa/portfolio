@@ -135,7 +135,7 @@
 
             <div class="contato__container">
                 <img src="assets/img/coding.gif" alt="">
-                <form class="contato__formulario">
+                <form id="Formmail" class="contato__formulario" method="POST" name="Formmail" action="assets/php/Envia_Email.php" target="formail">
                     <div class="contato__formulario-campo">
                       <input id="nome" name="nome" class="form-control" type="text" required>
                       <label for="nome">Nome</label>
@@ -154,7 +154,7 @@
                     </div>
                     <input type="hidden" name="portifolio" value="portifolio">
                     <div class="contato__formulario-campo">
-                        <button>Enviar mensagem</button>
+                        <button class="g-recaptcha" data-sitekey="6LdH1p8mAAAAAKwaATIN2g5mj1ilz6T9Hrp8CCzu" data-callback='onSubmit' data-action='submit'>Enviar DADOS</button>
                     </div>
                 </form>
             </div>
@@ -167,4 +167,6 @@
 </body>
 
 <script src="assets/js/efeitoDoTexto.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="">assets/js/recaptcha.js</script>
 </html>
