@@ -34,7 +34,7 @@
 
 .contato__formulario { 
     width: 100%;
-    text-align: center; 
+    text-align: left; 
     max-width: 900px;
   }
 
@@ -42,6 +42,7 @@
     margin-bottom: 16px;
     position: relative;
   }
+
   input, textarea {
     position: relative;
     display: block;
@@ -50,6 +51,7 @@
     border-radius: 4px;
     background-color: transparent;
     padding: 6px 4px 4px 14px;
+    margin-bottom: .5em;
     height: 40px;
     outline: none !important;
     font-size: 16px;
@@ -60,6 +62,7 @@
   textarea {
     resize: none;
     height: 133px;
+    font-family: var(--fonte-padrao);
 
   }
   
@@ -90,7 +93,7 @@
     font-weight: bold;
   }
   
-button {
+.botao__submit {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -111,5 +114,18 @@ button {
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+
+.botao__submit.enabled {
+  background: #2A7AE4;
+}
+
+.botao__submit.disabled {
+  background-color: gray;
+} 
+
+.mensagem-erro {
+  font-weight: 600;
+  color: red;
 }
 

@@ -24,7 +24,7 @@
                 </nav>
         
             </div>
-            <p><a href="mailto:mikedesousa92@gmailcom" class="cabecalho__menu-email">Meu melhor e-mail</a></p>
+            <p><a href="#contato" class="cabecalho__menu-email">Meu melhor e-mail</a></p>
         </header>
         
         <section class="info">
@@ -35,23 +35,24 @@
                       <span class="wrap"></span>
                     </a>
                   </h1>
-                <p class="info__descricao descricao">Sou um estudante de Front-end apaixonado por tecnologia. Recentemente comecei meus estudos em HTML, CSS e JavaScript e já estou desenvolvendo meus próprios projetos.</p>
+                <p class="info__descricao descricao">Sou um estudante entusiasmado e dedicado em busca de oportunidades para desenvolver minhas habilidades em programação. Sou comprometido em aprender e aplicar conceitos modernos de design e desenvolvimento web, estou animado em contribuir com projetos desafiadores e trabalhar em equipe para impulsionar a experiência do usuário.</p>
                 <div class="info__redes">
                     <nav class="info__redes-link">
                         <a href="https://github.com/mikedsousa" rel="external" target="_blank">Github</a>
                         <a href="https://www.linkedin.com/in/mike-de-sousa/" rel="external" target="_blank">Linkedin</a>
                         <a href="https://www.instagram.com/mike.dsousa/" rel="external" target="_blank">Instagram</a>
-                        <a href="" rel="external" target="_blank">Currículo</a>
+                        <a href="https://onlinecurriculo.com.br/r/GYRABXnrI" rel="external" target="_blank">Currículo</a>
                     </nav>
                 </div>
             </div>
         </section>
         <section id="sobre" class="sobre">
             <h2 class="sobre__titulo titulo">Sobre mim</h2>
-            <p class="sobre__descricao descricao">Recentemente comecei meus estudos em HTML, CSS e JavaScript e já estou desenvolvendo meus próprios projetos.</p>
-            <p class="sobre__descricao descricao">Tenho uma forte capacidade de aprendizado e estou comprometido em me manter atualizado sobre as últimas tecnologias para desenvolvimento Front-end. Minha competência em trabalhar com ferramentas como VSCode e GitHub me permite criar projetos simples, mas funcionais e com boa qualidade de código.</p>
-        
-            <p class="sobre__descricao descricao">Estou em busca de oportunidades para crescer profissionalmente e aplicar minhas habilidades em projetos desafiadores enquanto desenvolvo minha carreira como Front-end Developer.
+            <p class="sobre__descricao descricao">Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e tenho que confessar: trabalhar como desenvolvedor é um sonho que venho cultivando há algum tempo. Sempre fui fascinado por tecnologia e, quando descobri a programação, soube que era isso que eu queria fazer da minha vida.</p>
+            <p class="sobre__descricao descricao">Até agora, minha carreira como estudante de front-end tem sido incrível. Adquiri um bom conhecimento em HTML e CSS, o que me permitiu criar interfaces web bonitas e responsivas. No momento, estou focado em aprimorar meus conhecimentos em JavaScript e React.</p>
+            <p class="sobre__descricao descricao">Tenho grandes ambições para o futuro. Quero aprimorar ainda mais minhas habilidades, mergulhando em conceitos avançados e explorando novas bibliotecas e frameworks. Também tenho interesse em expandir minha atuação para além do desenvolvimento web, explorando a criação de aplicativos móveis e outras áreas relacionadas.
+            </p>
+            <p class="sobre__descricao descricao">Estou em busca de oportunidades para crescer profissionalmente e aplicar minhas habilidades em projetos desafiadores enquanto desenvolvo minha carreira como desenvolvedor.
             </p>
         </section>
         <section id="skills" class="skills">
@@ -97,13 +98,13 @@
         
                     </div>
                     <p class="formacao__texto texto">Análise e desenvolvimento de <br> Sistemas</p>
-                    <p class="formacao__subtexto">Em andamento - Anhanguera</p>
+                    <p class="formacao__subtexto">Em andamento - 2025</p>
                 </div>
                 <div>
                     <div class="formacao__icones">
                         <img class="formacao__logo" src="assets/img/alura.svg" alt="Logo Alura">
                     </div>
-                    <p class="formacao__texto texto">Trilha Front-end/React</p>
+                    <p class="formacao__texto texto">Formação Front End T5 - ONE</p>
                     <p class="formacao__subtexto">Em andamento - Alura</p>
                 </div>
                 <div>
@@ -135,26 +136,30 @@
 
             <div class="contato__container">
                 <img src="assets/img/coding.gif" alt="">
-                <form id="Formmail" class="contato__formulario" method="POST" name="Formmail" action="https://mikedesousa.site/assets/php/Envia_Email.php" target="formail">
+                <form id="Formmail" class="contato__formulario" method="POST" name="Formmail" action="assets/php/Envia_Email.php" target="formail">
                     <div class="contato__formulario-campo">
                       <input id="nome" name="nome" class="form-control" type="text" required>
                       <label for="nome">Nome</label>
+                      <span class="mensagem-erro"></span>
                     </div>
                     <div class="contato__formulario-campo">
-                      <input id="email" name="email" class="form-control" type="email" placeholder="" required>
+                      <input id="email" name="email" class="form-control" type="email" required>
                       <label for="email">Email</label>
+                      <span class="mensagem-erro"></span>
                     </div>
                     <div class="contato__formulario-campo">
                         <input id="assunto" name="assunto" class="form-control" type="text" required>
                         <label for="assunto">Assunto</label>
+                        <span class="mensagem-erro"></span>
                     </div>
                     <div class="contato__formulario-campo">
-                        <textarea id="mensagem" name="mensagem" class="form-control" required></textarea>
+                        <textarea id="mensagem" name="mensagem" class="form-control contato__formulario-input" required></textarea minlength="3" maxlength="300">
                         <label for="mensagem">Mensagem</label>
+                        <span class="mensagem-erro"></span>
                     </div>
                     <input type="hidden" name="portifolio" value="portifolio">
                     <div class="contato__formulario-campo">
-                        <button class="g-recaptcha botao__submit" data-sitekey="6LdH1p8mAAAAAKwaATIN2g5mj1ilz6T9Hrp8CCzu" data-callback='onSubmit' data-action='submit'>Enviar mensagem</button>
+                        <button id="button" class="g-recaptcha botao__submit" data-sitekey="6LdH1p8mAAAAAKwaATIN2g5mj1ilz6T9Hrp8CCzu" data-callback='onSubmit' data-action='submit' type="submit">Enviar mensagem</button>
                     </div>
                 </form>
             </div>
@@ -168,5 +173,6 @@
 
 <script src="assets/js/efeitoDoTexto.js"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
-<script src="">assets/js/recaptcha.js</script>
+<script src="assets/js/recaptcha.js"></script>
+<script src="assets/js/validador.js" type="module"></script>
 </html>
