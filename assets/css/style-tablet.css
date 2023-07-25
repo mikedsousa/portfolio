@@ -1,3 +1,7 @@
+.cabecalho__nome, .cabecalho__menu-email {
+    font-size: 1em;
+}
+
 .info {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
