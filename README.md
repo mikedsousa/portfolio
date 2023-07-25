@@ -40,5 +40,3 @@
 </ol>
 <li>Deve ter um rodapé com as informações da pessoa que desenvolveu o portfólio;</li>
 </ul>
-
-<a hfre="https://mikedesousa.site/">Deploy</a>
